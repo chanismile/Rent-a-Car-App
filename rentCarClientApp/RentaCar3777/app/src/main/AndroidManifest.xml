@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rentacar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- <uses-permission android:name="android.permision.CALL_PHONE"></uses-permission> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controller.OpenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.NewClient" />
+
+        <service
+            android:name=".service.MyIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".service.MyPerfectReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".controller.MyMenu"
+            android:label="@string/title_activity_my_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controller.WebActivity" />
+        <activity android:name=".controller.WebActivityGoogleMap" />
+        <activity android:name=".controller.MainActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rentacar.controller.OptionsForUser">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="19dp"
+        android:id="@+id/linearLayout3"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <CheckBox
+            android:id="@+id/clientChackBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:text="Clients"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/carChackBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:text="Cars"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/modelChackBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:text="Models"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/branchChackBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:text="Branches"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/showListButton"
+        android:layout_alignBottom="@+id/showListButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:text="add" />
+
+    <Button
+        android:id="@+id/showListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="21dp"
+        android:text="show all"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_toLeftOf="@+id/addButton"
+        android:layout_toStartOf="@+id/addButton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:fontFamily="casual"
+        android:text="choose one of the following:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+</android.widget.RelativeLayout>

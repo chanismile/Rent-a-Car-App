@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rentacar">
+    <uses-permission android:name="android.permission.INTERNET" />‏
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="Rent a Car"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".controller.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.NewUser" />
+        <activity android:name=".controller.CarsList" />
+        <activity android:name=".controller.ModelsList" />
+        <activity android:name=".controller.BranchesList" />
+        <activity android:name=".controller.ClientList" />
+        <activity android:name=".controller.OptionsForUser" />
+        <activity android:name=".controller.AddModel" />
+        <activity android:name=".controller.AddClient" />
+        <activity android:name=".controller.AddCar" />
+        <activity android:name=".controller.AddBranch"></activity>
+
+    </application>
+
+</manifest>

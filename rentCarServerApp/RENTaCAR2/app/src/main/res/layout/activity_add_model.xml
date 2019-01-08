@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.rentacar.controller.AddModel">
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Model's code:"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/AddModelCode"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linearLayout4"
+                android:layout_toEndOf="@+id/linearLayout4"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Factory name:"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/AddModelFactoryName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AddModelCode"
+                android:layout_alignStart="@+id/AddModelCode"
+                android:layout_below="@+id/AddModelCode"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Model's name:"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/AddModelName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AddModelFactoryName"
+                android:layout_alignStart="@+id/AddModelFactoryName"
+                android:layout_below="@+id/AddModelFactoryName"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Engine capacity:"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/AddModelEngineCapacity"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddModelName"
+                android:layout_toEndOf="@+id/linearLayout4"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Gearbox:"
+                android:textSize="22dp" />
+
+            <Spinner
+                android:id="@+id/addModelSpinner"
+                android:layout_width="162dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="  Seats:"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/AddModelSeats"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddModelGearbox"
+                android:layout_toEndOf="@+id/linearLayout4"
+                android:layout_toRightOf="@+id/linearLayout4"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_below="@+id/AddModleButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Please enter the model's details:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/AddModleButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Add"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/addModleIB"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:srcCompat="@drawable/home" />
+
+</android.widget.RelativeLayout>

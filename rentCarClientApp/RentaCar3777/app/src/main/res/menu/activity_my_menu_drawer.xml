@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/MakeAnOrder"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Make an order" />
+        <item
+            android:id="@+id/LikeCarList"
+            android:icon="@drawable/blackheart"
+            android:title="Wish list" />
+        <item
+            android:id="@+id/myOrder"
+            android:icon="@drawable/shoppingcart"
+            android:title="My order" />
+        <item
+            android:id="@+id/carList"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="car's list" />
+        <item
+            android:id="@+id/log_of"
+            android:icon="@drawable/logof"
+            android:title="Log of" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/logout"
+            android:title="Exit" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/RentCar"
+                android:icon="@drawable/ic_directions_car_black_24dp"
+                android:title="Rent a Car" />
+
+        </menu>
+    </item>
+
+</menu>

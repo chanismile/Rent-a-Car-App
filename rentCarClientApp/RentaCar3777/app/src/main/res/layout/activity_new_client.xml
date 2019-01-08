@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.rentacar.controller.NewClient">
+
+
+    <Button
+        android:id="@+id/NewClientAddMeButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="Add me"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/linearLayout3"
+        android:weightSum="1"
+        android:layout_alignBottom="@+id/NewClientAddMeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="first name:"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+            <EditText
+
+                android:id="@+id/newClientFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<TextView
+    android:id="@+id/textView21"
+    android:textSize="24sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="last name" />
+<EditText
+
+    android:id="@+id/newClientLastName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/textView20"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id:" />
+            <EditText
+
+                android:id="@+id/NewClientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+
+        </LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal" >
+        <TextView
+            android:textSize="24sp"
+
+            android:id="@+id/textView19"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="phone number:" />
+        <EditText
+
+            android:id="@+id/newClientPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+
+
+</LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" >
+
+          <TextView
+              android:id="@+id/textView17"
+
+              android:textSize="24sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="email:" />
+          <EditText
+
+              android:id="@+id/newClientEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="textPersonName"
+              />
+
+      </LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<TextView
+    android:id="@+id/textView15"
+
+    android:textSize="24sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="credit card:" />
+<EditText
+
+    android:id="@+id/newClientCreditCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<TextView
+    android:id="@+id/textView14"
+
+    android:textSize="24sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="password:" />
+
+    <EditText
+        android:id="@+id/NewClientPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Please enter your details here:"
+        android:textSize="24sp"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>
