@@ -15,11 +15,11 @@ This application manage rental cars. Including client and server apps. Data save
 
 ![login](https://github.com/chanismile/Rent-a-Car-App/blob/master/screenshots/client%20app/login.png)
 
-![new acount](screenshots/client app/new account.png)
+![new account](https://github.com/chanismile/Rent-a-Car-App/blob/master/screenshots/client%20app/new account.png)
 
-![navigation](screenshots/client app/navigation.png)
+![navigation](https://github.com/chanismile/Rent-a-Car-App/blob/master/screenshots/client%20app/navigation.png)
 
-![branches](screenshots/client app/branchs.png)
+![branches](screenshots/client%20app/branchs.png)
 
 ![cars](screenshots/client app/cars.png)
 
