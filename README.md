@@ -1,5 +1,5 @@
 # Rent a Car Apps
-This application manage rental cars. Including client and server apps. Data saved in MySql database.
+This application manage rental cars. Including client and server apps. Data was saved in MySql database.
 
 ## Server app:
 * Store the company data: cars, branchs and users data
